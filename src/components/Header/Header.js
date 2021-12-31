@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS, WEIGHTS, QUERIES } from '../../constants';
+import { WEIGHTS, QUERIES } from '../../constants';
 import Logo from '../Logo';
 import UnstyledButton from '../UnstyledButton';
 import SuperHeader from '../SuperHeader';
@@ -61,11 +61,11 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  border-bottom: 1px solid ${COLORS.gray[300]};
+  border-bottom: 1px solid var(--color-gray-300);
   overflow: auto;
 
   @media (${QUERIES.tabletAndSmaller}) {
-    border-top: 4px ${COLORS.gray[900]} solid;
+    border-top: 4px var(--color-gray-900) solid;
     padding: 20px 32px;
     align-items: center;
     justify-content: space-between;
@@ -121,11 +121,11 @@ const NavLink = styled.a`
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.medium};
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
